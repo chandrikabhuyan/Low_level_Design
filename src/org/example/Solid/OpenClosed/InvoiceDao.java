@@ -1,23 +1,7 @@
 package org.example.Solid.OpenClosed;
 
-import org.example.Solid.SingleResponsibility.Invoice;
-
-//initially we had only saveToDB, but later on if we have to add a new mthod saveToFile then we should extend instead
-// of modifying like here
-public class InvoiceDao {
-    Invoice invoice;
-    public InvoiceDao(Invoice invoice)
-    {
-        this.invoice = invoice;
-    }
-    public void saveToDB(){
-        //save to DB
-    }
-    public void saveToFile(String fileName)
-    {
-        //save to File
-    }
-}
+//initially we had only saveToDB, but later on if we have to add a new method saveToFile then we should extend instead
+// of modifying the original class
 
 // Open for extension but closed for modification.
 // This means that a system should improve easily by adding new code instead of changing the code core.

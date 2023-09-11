@@ -11,7 +11,7 @@ public class Marker {
     }
 }
 
-public class Invoice{
+class Invoice{
     private Marker marker;
     private int quantity;
     public Invoice(Marker marker,int quantity) {
